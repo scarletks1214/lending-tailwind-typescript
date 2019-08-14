@@ -1,3 +1,20 @@
 @tailwind base;
+
+@font-face {
+  font-family: Colfax;
+  font-weight: 700;
+  src: url(/assets/font/colfaxBold) format('truetype');
+}
+@font-face {
+  font-family: Colfax;
+  font-weight: 500;
+  src: url(/assets/font/colfaxMedium) format('truetype');
+}
+@font-face {
+  font-family: Colfax;
+  font-weight: 400;
+  src: url(/assets/font/colfaxRegular) format('truetype');
+}
+
 @tailwind components;
 @tailwind utilities;

@@ -1,15 +1,13 @@
 import React, { FC } from 'react';
-import bestRate from '../../../assets/images/best-rate.png';
-// TODO: backcolor handling    import classNames from 'classnames';
 
 interface IProps {
   green?: boolean;
   logo?: any;
   title?: string;
   currentRate?: number;
-  weekly?: number;
-  monthly?: number;
-  yearly?: number;
+  weekly: number;
+  monthly: number;
+  yearly: number;
 }
 
 const BoxComponent: FC<IProps> = ({green, logo, title, currentRate, weekly, monthly, yearly}: IProps) => (
@@ -18,6 +16,7 @@ const BoxComponent: FC<IProps> = ({green, logo, title, currentRate, weekly, mont
     <img src={logo} alt='icon' />
     <div>{title}</div>
     <img
+      className='h-lg'
       style={{visibility: green ? 'visible' : 'hidden'}}
       src={require('../../../assets/images/best-rate.png')}
       srcSet={`
@@ -25,14 +24,14 @@ const BoxComponent: FC<IProps> = ({green, logo, title, currentRate, weekly, mont
         ${require('../../../assets/images/best-rate@3x.png')} 3x
       `}
       alt='best-rate' />
-    <div className='text-xs text-gray-400 pt-4'>Current Variable Rate</div>
-    <div className='text-sm text-black font-bold pt-2'>{currentRate}%</div>
-    <div className='text-xs text-gray-400 pt-4'>Weekly</div>
-    <div className='text-sm text-black font-bold pt-2'>${weekly}</div>
-    <div className='text-xs text-gray-400 pt-4'>Monthly</div>
-    <div className='text-sm text-black font-bold pt-2'>${monthly}</div>
-    <div className='text-xs text-gray-400 pt-4'>Yearly</div>
-    <div className='text-sm text-black font-bold pt-2 pb-4'>${yearly}</div>
+    <div className='text-xs text-gray-400 pt-lg'>Current Variable Rate</div>
+    <div className='text-md text-black font-bold pt-md'>{currentRate}%</div>
+    <div className='text-xs text-gray-400 pt-lg'>Weekly</div>
+    <div className='text-md text-black font-bold pt-md'>${weekly.toFixed(2)}</div>
+    <div className='text-xs text-gray-400 pt-lg'>Monthly</div>
+    <div className='text-md text-black font-bold pt-md'>${monthly.toFixed(2)}</div>
+    <div className='text-xs text-gray-400 pt-lg'>Yearly</div>
+    <div className='text-md text-black font-bold pt-md pb-lg'>${yearly.toFixed(2)}</div>
   </div>
 );
 

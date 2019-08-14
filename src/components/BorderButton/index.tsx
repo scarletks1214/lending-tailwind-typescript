@@ -5,7 +5,7 @@ interface IProps {
 }
 
 const BorderButton: React.FC<IProps> = (props: IProps) => (
-  <button className='text-white bg-transparent rounded-lg border-white border text-sm px-4 py-1'>
+  <button className='text-white bg-transparent rounded-lg border-white border text-sm px-lg py-sm'>
     {props.text}
   </button>
 );
