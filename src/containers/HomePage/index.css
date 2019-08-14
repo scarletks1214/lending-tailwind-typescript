@@ -1,0 +1,17 @@
+.custom-bg {
+  background: linear-gradient(#151519 0%, #182A3A 39.58%, #231036 64.06%, #000000 98.96%);
+}
+
+.btn-blue {
+  background-color: #0055FF; /*TODO: change later*/
+}
+
+.playBox {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.custom-gradient-color {
+  background: linear-gradient(#151519 0%, #182A3A 39.58%, #231036 64.06%, #000000 98.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
