@@ -90,7 +90,7 @@ const HomePage: FC<IProps> = () => (
     </div>
   
     <div className='bg-gray-100'>
-      <div className='container mx-auto px-md py-2xl'>
+      <div className='container mx-auto px-md py-4xl'>
         <div className='text-gray-600 text-sm'>Overview</div>
         <div className='text-3xl font-bold'>Why use Helis?</div>
         <div className='text-md text-gray-700'>
@@ -99,22 +99,22 @@ const HomePage: FC<IProps> = () => (
 
         <div className='pt-8 flex tablet:flex-none justify-between'>
           <div>
-            <div className='text-4xl font-bold text-gray-500'>01</div>
-            <h2>Best interest rates</h2>
+            <div className='text-5xl font-bold text-gray-500'>01</div>
+            <div className='text-2xl font-bold'>Best interest rates</div>
             <div className='text-gray-500 text-xs'>
               Compare and select the best rates
             </div>
           </div>
           <div>
-            <div className='text-4xl font-bold text-gray-500'>02</div>
-            <h2>No extra downloads</h2>
+            <div className='text-5xl font-bold text-gray-500'>02</div>
+            <div className='text-2xl font-bold'>No extra downloads</div>
             <div className='text-gray-500 text-xs'>
               Simply use a username and password
             </div>
           </div>
           <div>
-            <div className='text-4xl font-bold text-gray-500'>03</div>
-            <h2>No term lock-in</h2>
+            <div className='text-5xl font-bold text-gray-500'>03</div>
+            <div className='text-2xl font-bold'>No term lock-in</div>
             <div className='text-gray-500 text-xs'>
               Withdraw your money anytime
             </div>
