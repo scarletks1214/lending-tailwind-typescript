@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      'display': []
+      'display': ['Colfax']
     },
     fontSize: {
       'tiny':   '0.5rem',
@@ -70,6 +70,16 @@ module.exports = {
       '56':    '14.00rem',
       '64':    '16.00rem',
       '80':    '20.00rem',
+    },
+    letterSpacing: {
+      tightest:   '-.075em',
+      tighter:    '-.05em',
+      tight:      '-.025em',
+      normal:     '0',
+      wide:       '.025em',
+      wider:      '.05em',
+      widest:     '.1em',
+      widest:     '.35em',
     },
     gradients: {
       customGradient: ['#151519 0%', '#182A3A 39.58%', '#231036 64.06%', '#000000 98.96%']

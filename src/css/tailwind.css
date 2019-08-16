@@ -385,7 +385,6 @@ h3,
 h4,
 h5,
 h6,
-hr,
 figure,
 p,
 pre {
@@ -463,7 +462,7 @@ html {
  */
 
 hr {
-  border-top-width: 1px;
+  border-width: 1px;
 }
 
 /**
@@ -603,7 +602,7 @@ video {
 
   font-weight: 700;
 
-  src: url(/assets/font/colfaxBold) format('truetype');
+  src: url(/font/colfaxBold) format('truetype');
 }
 
 @font-face {
@@ -611,7 +610,7 @@ video {
 
   font-weight: 500;
 
-  src: url(/assets/font/colfaxMedium) format('truetype');
+  src: url(/font/colfaxMedium) format('truetype');
 }
 
 @font-face {
@@ -619,49 +618,64 @@ video {
 
   font-weight: 400;
 
-  src: url(/assets/font/colfaxRegular) format('truetype');
+  src: url(/font/colfaxRegular) format('truetype');
 }
 
 h1 {
   font-size: 2.25rem;
   line-height: 1.25;
-  font-family: ;
+  font-family: Colfax;
   font-weight: 700;
 }
 
 h2 {
   font-size: 1.875rem;
   line-height: 1.25;
-  font-family: ;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  line-height: 1.25;
-  font-family: ;
+  font-family: Colfax;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #A0A0A0;
+  font-family: Colfax;
+  font-weight: 500;
+  letter-spacing: .35em;
+  color: #BABABA;
   margin-bottom: 0.25rem;
 }
 
 h6 {
   font-size: 1.125rem;
   line-height: 1.25;
-  font-family: ;
-  font-weight: 500
+  font-family: Colfax;
+  font-weight: 500;
 }
 
 p {
-  letter-spacing: 0.025em;
+  letter-spacing: .025em;
+}
+
+.btn {
+  color: #FFFFFF;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 0.5rem;
+}
+
+.btn-blue {
+  background-color: #0055FF;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 0.5rem;
 }
 
 .container {
@@ -1761,7 +1775,7 @@ p {
 }
 
 .font-display {
-  font-family: ;
+  font-family: Colfax;
 }
 
 .font-hairline {
@@ -5625,12 +5639,16 @@ p {
   -moz-osx-font-smoothing: auto;
 }
 
+.tracking-tightest {
+  letter-spacing: -.075em;
+}
+
 .tracking-tighter {
-  letter-spacing: -0.05em;
+  letter-spacing: -.05em;
 }
 
 .tracking-tight {
-  letter-spacing: -0.025em;
+  letter-spacing: -.025em;
 }
 
 .tracking-normal {
@@ -5638,15 +5656,15 @@ p {
 }
 
 .tracking-wide {
-  letter-spacing: 0.025em;
+  letter-spacing: .025em;
 }
 
 .tracking-wider {
-  letter-spacing: 0.05em;
+  letter-spacing: .05em;
 }
 
 .tracking-widest {
-  letter-spacing: 0.1em;
+  letter-spacing: .35em;
 }
 
 .select-none {
@@ -7082,7 +7100,7 @@ p {
   }
 
   .mobile\:font-display {
-    font-family: ;
+    font-family: Colfax;
   }
 
   .mobile\:font-hairline {
@@ -10946,12 +10964,16 @@ p {
     -moz-osx-font-smoothing: auto;
   }
 
+  .mobile\:tracking-tightest {
+    letter-spacing: -.075em;
+  }
+
   .mobile\:tracking-tighter {
-    letter-spacing: -0.05em;
+    letter-spacing: -.05em;
   }
 
   .mobile\:tracking-tight {
-    letter-spacing: -0.025em;
+    letter-spacing: -.025em;
   }
 
   .mobile\:tracking-normal {
@@ -10959,15 +10981,15 @@ p {
   }
 
   .mobile\:tracking-wide {
-    letter-spacing: 0.025em;
+    letter-spacing: .025em;
   }
 
   .mobile\:tracking-wider {
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
   }
 
   .mobile\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: .35em;
   }
 
   .mobile\:select-none {
@@ -12398,7 +12420,7 @@ p {
   }
 
   .tablet\:font-display {
-    font-family: ;
+    font-family: Colfax;
   }
 
   .tablet\:font-hairline {
@@ -16262,12 +16284,16 @@ p {
     -moz-osx-font-smoothing: auto;
   }
 
+  .tablet\:tracking-tightest {
+    letter-spacing: -.075em;
+  }
+
   .tablet\:tracking-tighter {
-    letter-spacing: -0.05em;
+    letter-spacing: -.05em;
   }
 
   .tablet\:tracking-tight {
-    letter-spacing: -0.025em;
+    letter-spacing: -.025em;
   }
 
   .tablet\:tracking-normal {
@@ -16275,15 +16301,15 @@ p {
   }
 
   .tablet\:tracking-wide {
-    letter-spacing: 0.025em;
+    letter-spacing: .025em;
   }
 
   .tablet\:tracking-wider {
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
   }
 
   .tablet\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: .35em;
   }
 
   .tablet\:select-none {
@@ -17714,7 +17740,7 @@ p {
   }
 
   .desktop\:font-display {
-    font-family: ;
+    font-family: Colfax;
   }
 
   .desktop\:font-hairline {
@@ -21578,12 +21604,16 @@ p {
     -moz-osx-font-smoothing: auto;
   }
 
+  .desktop\:tracking-tightest {
+    letter-spacing: -.075em;
+  }
+
   .desktop\:tracking-tighter {
-    letter-spacing: -0.05em;
+    letter-spacing: -.05em;
   }
 
   .desktop\:tracking-tight {
-    letter-spacing: -0.025em;
+    letter-spacing: -.025em;
   }
 
   .desktop\:tracking-normal {
@@ -21591,15 +21621,15 @@ p {
   }
 
   .desktop\:tracking-wide {
-    letter-spacing: 0.025em;
+    letter-spacing: .025em;
   }
 
   .desktop\:tracking-wider {
-    letter-spacing: 0.05em;
+    letter-spacing: .05em;
   }
 
   .desktop\:tracking-widest {
-    letter-spacing: 0.1em;
+    letter-spacing: .35em;
   }
 
   .desktop\:select-none {

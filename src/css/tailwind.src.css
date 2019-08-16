@@ -3,17 +3,17 @@
 @font-face {
   font-family: Colfax;
   font-weight: 700;
-  src: url(/assets/font/colfaxBold) format('truetype');
+  src: url(/font/colfaxBold) format('truetype');
 }
 @font-face {
   font-family: Colfax;
   font-weight: 500;
-  src: url(/assets/font/colfaxMedium) format('truetype');
+  src: url(/font/colfaxMedium) format('truetype');
 }
 @font-face {
   font-family: Colfax;
   font-weight: 400;
-  src: url(/assets/font/colfaxRegular) format('truetype');
+  src: url(/font/colfaxRegular) format('truetype');
 }
 
 h1 {
@@ -24,21 +24,26 @@ h2 {
   @apply text-3xl leading-tight font-display font-medium mb-lg;
 }
 
-h3 {
-  @apply text-2xl leading-tight font-display font-medium mb-lg;
-}
-
 h5 {
-  @apply text-xl uppercase tracking-widest text-gray-500 mb-sm;
+  @apply text-sm uppercase font-display font-medium tracking-widest text-gray-400 mb-sm;
 }
 
 h6 {
-  @apply text-lg leading-tight font-display font-medium
+  @apply text-lg leading-tight font-display font-medium;
 }
 
 p {
   @apply tracking-wide;
 }
+
+.btn {
+  @apply text-white font-bold py-md px-xl rounded-lg;
+}
+
+.btn-blue {
+  @apply bg-blue-100 btn;
+}
+
 
 @tailwind components;
 @tailwind utilities;
