@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      'display': ['Colfax']
+      'display': []
     },
     fontSize: {
       'tiny':   '0.5rem',

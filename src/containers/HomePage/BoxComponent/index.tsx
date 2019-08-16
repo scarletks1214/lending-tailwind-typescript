@@ -4,34 +4,33 @@ interface IProps {
   green?: boolean;
   logo?: any;
   title?: string;
-  currentRate?: number;
+  currentRate: number;
   weekly: number;
   monthly: number;
   yearly: number;
 }
 
-const BoxComponent: FC<IProps> = ({green, logo, title, currentRate, weekly, monthly, yearly}: IProps) => (
+const BoxComponent: FC<IProps> = ({ green, logo, title, currentRate, weekly, monthly, yearly }: IProps) => (
   <div className={`w-40 ${green && 'bg-green-100'} pl-8 pt-8`}>
-    {/* TODO: decimal format */}
     <img src={logo} alt='icon' />
-    <div>{title}</div>
+    <p>{title}</p>
     <img
       className='h-lg'
-      style={{visibility: green ? 'visible' : 'hidden'}}
-      src={require('../../../assets/images/best-rate.png')}
+      style={{ visibility: green ? 'visible' : 'hidden' }}
+      src={require('@image/best-rate.png')}
       srcSet={`
-        ${require('../../../assets/images/best-rate@2x.png')} 2x,
-        ${require('../../../assets/images/best-rate@3x.png')} 3x
+        ${require('@image/best-rate@2x.png')} 2x,
+        ${require('@image/best-rate@3x.png')} 3x
       `}
       alt='best-rate' />
-    <div className='text-xs text-gray-400 pt-lg'>Current Variable Rate</div>
-    <div className='text-md text-black font-bold pt-md'>{currentRate}%</div>
-    <div className='text-xs text-gray-400 pt-lg'>Weekly</div>
-    <div className='text-md text-black font-bold pt-md'>${weekly.toFixed(2)}</div>
-    <div className='text-xs text-gray-400 pt-lg'>Monthly</div>
-    <div className='text-md text-black font-bold pt-md'>${monthly.toFixed(2)}</div>
-    <div className='text-xs text-gray-400 pt-lg'>Yearly</div>
-    <div className='text-md text-black font-bold pt-md pb-lg'>${yearly.toFixed(2)}</div>
+    <p className='text-xs text-gray-400 pt-lg'>Current Variable Rate</p>
+    <p className='text-black font-bold pt-md'>{currentRate.toFixed(2)}%</p>
+    <p className='text-xs text-gray-400 pt-lg'>Weekly</p>
+    <p className='text-md text-black font-bold pt-md'>${weekly.toFixed(2)}</p>
+    <p className='text-xs text-gray-400 pt-lg'>Monthly</p>
+    <p className='text-md text-black font-bold pt-md'>${monthly.toFixed(2)}</p>
+    <p className='text-xs text-gray-400 pt-lg'>Yearly</p>
+    <p className='text-md text-black font-bold pt-md pb-lg'>${yearly.toFixed(2)}</p>
   </div>
 );
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import logo from '../../assets/images/Logo.png';
+import logo from '@image/logo.png';
 
 interface IProps {
 }

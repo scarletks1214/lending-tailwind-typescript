@@ -16,5 +16,29 @@
   src: url(/assets/font/colfaxRegular) format('truetype');
 }
 
+h1 {
+  @apply text-4xl leading-tight font-display font-bold;
+}
+
+h2 {
+  @apply text-3xl leading-tight font-display font-medium mb-lg;
+}
+
+h3 {
+  @apply text-2xl leading-tight font-display font-medium mb-lg;
+}
+
+h5 {
+  @apply text-xl uppercase tracking-widest text-gray-500 mb-sm;
+}
+
+h6 {
+  @apply text-lg leading-tight font-display font-medium
+}
+
+p {
+  @apply tracking-wide;
+}
+
 @tailwind components;
 @tailwind utilities;

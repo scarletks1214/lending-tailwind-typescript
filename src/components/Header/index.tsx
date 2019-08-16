@@ -1,6 +1,7 @@
-import React, { FC } from 'react';
-import Logo from '../Logo';
 import BorderButton from '../BorderButton';
+import Logo from '../Logo';
+import { FC } from 'react';
+import React from 'react';
 
 interface IProps {
 }
