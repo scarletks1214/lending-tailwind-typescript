@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      'display': ['Colfax']
+      'display': ['Colfax Bold', 'Colfax Medium', 'Colfax Regular', 'SF Pro Text']
     },
     fontSize: {
       'tiny':   '0.5rem',
@@ -12,8 +12,9 @@ module.exports = {
       'xl':     '1.25rem',
       '2xl':    '1.5rem',
       '3xl':    '1.875rem',
-      '4xl':    '2.25rem',
-      '5xl':    '3rem'
+      '4xl':    '2.5rem',
+      '5xl':    '3rem',
+      '6xl':    '72px'
     },
     screens: {
       mobile: '320px',
@@ -33,8 +34,9 @@ module.exports = {
         600: '#787A7E'
       },
       blue: {
-        100: '#0055FF',
-        200: '#0B182D'
+        100: '#318EFF',
+        200: '#0055FF',
+        300: '#0B182D'
       },
       purple: {
         100: 'rgba(255, 255, 255, 0.07)'
@@ -46,6 +48,7 @@ module.exports = {
       'none':  '0px',
       'sm':    '0.25rem',
       'md':    '0.5rem',
+      'base':    '0.75rem',
       'lg':    '1rem',
       'xl':    '2rem',
       '2xl':   '4rem',
@@ -81,15 +84,22 @@ module.exports = {
       widest:     '.1em',
       widest:     '.35em',
     },
+    borderRadius: {
+      lg: '12px'
+    },
     gradients: {
       customGradient: ['#151519 0%', '#182A3A 39.58%', '#231036 64.06%', '#000000 98.96%']
     },
     extend: {}
   },
+  boxShadow: {
+    lg: '0px 4px 20px rgba(0, 0, 0, 0.05)',
+  },
   variants: {
-    maxWidth: ['responsive']
+    maxWidth: ['responsive'],
+    outline: ['focus', 'responsive', 'hover'],
   },
   plugins: [
-    require('tailwindcss-plugins/gradients')
-  ]
+    require('tailwindcss-plugins/gradients'),
+  ],
 }

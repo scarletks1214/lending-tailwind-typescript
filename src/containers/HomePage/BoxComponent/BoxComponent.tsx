@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
+import bestRateImage from '@image/best-rate.svg';
 
 interface IProps {
+  isLeft?: boolean,
   green?: boolean;
   logo?: any;
   title?: string;
@@ -10,18 +12,14 @@ interface IProps {
   yearly: number;
 }
 
-const BoxComponent: FC<IProps> = ({ green, logo, title, currentRate, weekly, monthly, yearly }: IProps) => (
-  <div className={`w-40 ${green && 'bg-green-100'} pl-8 pt-8`}>
+const BoxComponent: FC<IProps> = ({ isLeft, green, logo, title, currentRate, weekly, monthly, yearly }: IProps) => (
+  <div className={`w-1/2 z-10 ${green ? 'bg-green-100' : 'bg-white'} pl-8 pt-8 ${isLeft? 'rounded-l-lg' : 'rounded-r-lg'}`}>
     <img src={logo} alt='icon' />
     <p>{title}</p>
     <img
       className='h-lg'
       style={{ visibility: green ? 'visible' : 'hidden' }}
-      src={require('@image/best-rate.png')}
-      srcSet={`
-        ${require('@image/best-rate@2x.png')} 2x,
-        ${require('@image/best-rate@3x.png')} 3x
-      `}
+      src={bestRateImage}
       alt='best-rate' />
     <p className='text-xs text-gray-400 pt-lg'>Current Variable Rate</p>
     <p className='text-black font-bold pt-md'>{currentRate.toFixed(2)}%</p>
@@ -35,6 +33,7 @@ const BoxComponent: FC<IProps> = ({ green, logo, title, currentRate, weekly, mon
 );
 
 BoxComponent.defaultProps = {
+  isLeft: false,
   green: false,
   logo: null,
   title: 'Compound',

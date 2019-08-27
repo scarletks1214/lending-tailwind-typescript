@@ -1,35 +1,50 @@
 @tailwind base;
 
 @font-face {
-  font-family: Colfax;
+  font-family: 'Colfax Bold';
   font-weight: 700;
-  src: url(/font/colfaxBold) format('truetype');
+  src: url(../assets/font/colfaxMedium.ttf) format('truetype');
 }
+
 @font-face {
-  font-family: Colfax;
+  font-family: 'Colfax Medium';
   font-weight: 500;
-  src: url(/font/colfaxMedium) format('truetype');
+  src: url(../assets/font/colfaxMedium.ttf) format('truetype');
 }
 @font-face {
-  font-family: Colfax;
+  font-family: 'Colfax Regular';
   font-weight: 400;
-  src: url(/font/colfaxRegular) format('truetype');
+  src: url(../assets/font/colfaxRegular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-weight: 700;
+  src: url(../assets/font/sfProText.ttf) format('truetype');
 }
 
 h1 {
-  @apply text-4xl leading-tight font-display font-bold;
+  @apply text-5xl leading-tight font-display font-bold;
 }
 
 h2 {
+  @apply text-4xl leading-tight font-display font-bold mb-lg;
+}
+
+h3 {
   @apply text-3xl leading-tight font-display font-medium mb-lg;
 }
 
+h4 {
+  @apply text-2xl leading-tight font-display font-medium mb-lg;
+}
+
 h5 {
-  @apply text-sm uppercase font-display font-medium tracking-widest text-gray-400 mb-sm;
+  @apply text-sm uppercase font-display font-medium tracking-widest text-gray-300 mb-sm;
 }
 
 h6 {
-  @apply text-lg leading-tight font-display font-medium;
+  @apply text-base leading-tight font-display font-semibold;
 }
 
 p {
@@ -37,13 +52,37 @@ p {
 }
 
 .btn {
-  @apply text-white font-bold py-md px-xl rounded-lg;
+  @apply text-white text-base font-bold rounded-lg border-none outline-none capitalize;
+}
+
+.border-button {
+  @apply text-white rounded-lg border-white border outline-none text-sm px-lg py-md
 }
 
 .btn-blue {
-  @apply bg-blue-100 btn;
+  @apply bg-blue-200 btn;
 }
 
+.play-rect {
+  @apply flex justify-center items-center bg-purple-100 rounded-lg;
+}
+
+.text-field {
+  @apply border border-gray-200 text-gray-600 rounded-lg text-base outline-none p-base;
+}
+
+.sf-text-pro {
+  font-family: 'SF Pro Text';
+}
+
+.footer-item {
+  @apply flex pb-md leading-normal text-gray-400;
+}
+
+.custom-gradient-color {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @tailwind components;
 @tailwind utilities;

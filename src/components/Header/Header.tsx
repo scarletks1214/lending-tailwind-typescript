@@ -7,7 +7,7 @@ interface IProps {
 }
 
 const Header: FC<IProps> = () => (
-  <div className='flex justify-between items-center py-3'>
+  <div className='flex justify-between items-center py-lg'>
     <Logo />
     <BorderButton text='Contact' />
   </div>
